@@ -1,0 +1,5 @@
+.comingSoon {
+  .loadingText span::after {
+    animation-iteration-count: infinite !important;
+  }
+}

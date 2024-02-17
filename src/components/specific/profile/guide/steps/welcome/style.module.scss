@@ -1,0 +1,38 @@
+.guideWelcome {
+  .Text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    span {
+      display: inline-block;
+    }
+  }
+  .sparkles {
+    animation: sparkles-animation 2s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  @keyframes sparkles-animation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .borderLine {
+    animation: borderLine-animation 2s;
+    width: 0;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes borderLine-animation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 640px;
+    }
+  }
+}

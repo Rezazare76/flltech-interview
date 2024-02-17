@@ -1,0 +1,10 @@
+html[class="dark"] {
+  color: white;
+  .loadingText {
+    span {
+      &::after {
+        color: #fff !important;
+      }
+    }
+  }
+}

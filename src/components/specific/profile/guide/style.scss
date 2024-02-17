@@ -1,0 +1,27 @@
+.guide {
+  .filter {
+    backdrop-filter: blur(1px);
+  }
+  .cover {
+    z-index: 5;
+    left: 0;
+    top: 0;
+  }
+  .control {
+    backdrop-filter: brightness(0.4);
+  }
+  .move-to-top {
+    animation: move 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    bottom: -100px;
+  }
+  @keyframes move {
+    0% {
+      bottom: -100px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+}

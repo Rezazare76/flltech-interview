@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: interLight;
+  src: url("assets/fonts/Inter-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: interRegular;
+  src: url("assets/fonts/Inter-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: interMedium;
+  src: url("assets/fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: interBold;
+  src: url("assets/fonts/Inter-Bold.ttf");
+  font-display: swap;
+}
+@layer base {
+  html {
+    font-size: 16px;
+    font-family: interRegular;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(225, 219, 219, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 1px solid rgba(225, 219, 219, 0.46);
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected, */
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+.drop-shadow {
+  filter: drop-shadow(2px 4px 6px black);
+}
