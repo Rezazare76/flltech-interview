@@ -1,25 +1,19 @@
-import { Suspense, lazy, memo, useContext, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { memo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { menuList } from "./data";
-import { Button, MenuTools } from "components";
+import { MenuTools } from "components";
 import { RiUser2Fill, RiMenu2Fill } from "@remixicon/react";
-import { useSWRConfig } from "swr";
 import logo from "assets/images/logo.svg";
 import arrow from "assets/images/icons/arrow.svg";
 import "./style.scss";
 import Guide from "components/specific/profile/guide/Guide";
 
 export const ProfileMenu = memo(() => {
-  const { mutate } = useSWRConfig();
   const navigate = useNavigate();
   const location = window.location.pathname;
   const [isOpen, setIsOpen] = useState(false);
   const [sub, setSub] = useState<undefined | number>(undefined);
-  const handleExit = () => {
-    sessionStorage.removeItem("userToken");
-    navigate("/authentication/login");
-    mutate(() => true, undefined, { revalidate: false });
-  };
+
   const handleMenuClick = (elm: any, inx: number) => {
     if (!elm.sub) setIsOpen(false);
     setSub(inx);

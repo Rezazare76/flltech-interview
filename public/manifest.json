@@ -1,7 +1,7 @@
 {
-  "short_name": "Adna Clinic",
-  "name": "Adna Clinic",
-  "description": "Easily create your lesson chart and don't worry about prerequisite and co-requisite educational rules",
+  "short_name": "A10 Pay",
+  "name": "A10 Pay",
+  "description": "A10 Pay",
   "orientation": "any",
   "iarc_rating_id": "e58c174a-81d2-5c3c-32cc-34b8de4a52e9",
   "icons": [
@@ -421,10 +421,7 @@
       "src": "icons/ios/128.png",
       "sizes": "128x128"
     },
-    {
-      "src": "icons/ios/144.png",
-      "sizes": "144x144"
-    },
+
     {
       "src": "icons/ios/152.png",
       "sizes": "152x152"
