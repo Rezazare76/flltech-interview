@@ -1,6 +1,6 @@
 import { FC, MouseEvent } from "react";
-import ButtonProps from "./type";
 import { RiRefreshLine, RiErrorWarningLine } from "@remixicon/react";
+import { ButtonProps } from "types/common";
 export const Button: FC<ButtonProps> = ({
   className,
   text,

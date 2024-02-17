@@ -8,10 +8,10 @@ const NotFound: React.FC = () => {
     navigate("/");
   };
   return (
-    <section className="flex h-screen w-screen flex-col items-center justify-center bg-secondary-100">
+    <section className="flex h-screen w-screen flex-col items-center justify-center ">
       <img src={notFound} width="50%" />
       <Button
-        className="pulse-danger w-[216px] rounded-xs bg-primary-500 px-12 py-2 text-center text-white"
+        className="pulse-danger w-[216px] rounded-xs bg-secondary-100 px-12 py-2 text-center text-white"
         text="Back To Home"
         onClick={handleExit}
       />

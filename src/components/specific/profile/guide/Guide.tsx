@@ -11,7 +11,7 @@ interface guideProp {
 const Guide: FC<guideProp> = ({ setShow }) => {
   const [userGuide, setUserGuide] = useState<boolean>(
     !!localStorage.getItem("guide") || false,
-  ); // 用户当前步
+  );
   const [step, setStep] = useState(0);
   useEffect(() => {
     if (step >= 2) setShow(true);

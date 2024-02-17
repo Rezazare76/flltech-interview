@@ -1,0 +1,33 @@
+.guide {
+  button {
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    span {
+      padding: 0 6px;
+      width: 50px;
+    }
+    img {
+      object-position: 3px;
+    }
+    &.back img {
+      rotate: 180deg;
+    }
+    div {
+      width: 0;
+      height: 31px;
+      margin-left: 0;
+    }
+    &.next:hover div {
+      width: 10px;
+      margin-right: 8px;
+    }
+
+    &.back:hover div {
+      width: 10px;
+      margin-left: 8px;
+    }
+  }
+}

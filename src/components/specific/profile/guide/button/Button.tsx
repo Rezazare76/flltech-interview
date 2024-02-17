@@ -1,5 +1,5 @@
 import { FC, ReactNode, memo } from "react";
-import "./Button.css";
+import "./style.scss";
 interface guideButtonType {
   setStep: (arg: number) => void;
   step: number;

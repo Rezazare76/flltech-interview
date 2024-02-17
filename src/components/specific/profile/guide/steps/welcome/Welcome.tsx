@@ -10,7 +10,7 @@ const Welcome = () => {
     h-full w-full  flex-col items-center justify-center bg-black`}
       >
         <div
-          className={`${style.Text}  loadingText text-center  text-xl sm:text-7xl dark:text-transparent`}
+          className={`${style.Text}  loadingText text-center  text-xl text-transparent sm:text-7xl`}
         >
           <span data-text="W">W</span>
           <span data-text="E">E</span>
@@ -19,7 +19,9 @@ const Welcome = () => {
           <span data-text="O">O</span>
           <span data-text="M">M</span>
           <span data-text="E">E</span>
-          <span data-text="T">T</span>
+          <span data-text="T" className="ml-2">
+            T
+          </span>
           <span data-text="O">O</span>
         </div>
         <img src={logo} className={`${style.sparkles}`} />
