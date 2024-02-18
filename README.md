@@ -1,6 +1,6 @@
 # Live Demo
 
-🔗 Mint's Sign up page](https://reza-zare-flltech-interview.vercel.app/
+🔗 [Mint's Sign up page](https://reza-zare-flltech-interview.vercel.app/)
 
 
 # Flltech Interview Dashboard
@@ -42,6 +42,8 @@ To start the development server and use this project, simply run the following c
 ```bash
 npm run dev
 ```
+now open
+[localhost](http://localhost:3001/)
 
 List the technologies and frameworks used in your project. For example:
 
